@@ -1,0 +1,35 @@
+{
+  "name":"OSINT Framework",
+  "type":"folder",
+  "children":[
+    {"name":"Username","type":"folder","children":[
+      {"name":"Username Search Engines","type":"folder","children":[
+        {"name":"WhatsMyName Web","type":"url","url":"https://whatsmyname.app/","description":"Web-based username enumeration across many public sites.","status":"live","pricing":"free","bestFor":"Quick username enumeration","input":"Username","output":"Potential matching profile URLs","opsec":"active","opsecNote":"The service checks target sites from its infrastructure.","localInstall":false,"googleDork":false,"registration":false,"editUrl":false,"api":false,"invitationOnly":false,"deprecated":false},
+        {"name":"Namechk","type":"url","url":"https://namechk.com/","description":"Username and domain availability checker.","status":"live","pricing":"free","bestFor":"Checking username availability","input":"Username or domain","output":"Availability results","opsec":"passive","localInstall":false,"googleDork":false,"registration":false,"editUrl":false,"api":false,"invitationOnly":false,"deprecated":false},
+        {"name":"Sherlock (T)","type":"url","url":"https://github.com/sherlock-project/sherlock","description":"Open-source CLI for username searches across many social networks.","status":"live","pricing":"free","bestFor":"Mass username enumeration","input":"Username","output":"Potential profile URLs","opsec":"active","localInstall":true,"googleDork":false,"registration":false,"editUrl":false,"api":false,"invitationOnly":false,"deprecated":false}
+      ]}
+    ]},
+    {"name":"Email Address","type":"folder","children":[
+      {"name":"Email Search","type":"folder","children":[
+        {"name":"Hunter","type":"url","url":"https://hunter.io/","description":"Business email discovery and verification service.","status":"live","pricing":"freemium","bestFor":"Business email discovery","input":"Domain or person/company information","output":"Business email addresses","opsec":"passive","localInstall":false,"googleDork":false,"registration":false,"editUrl":false,"api":true,"invitationOnly":false,"deprecated":false},
+        {"name":"theHarvester (T)","type":"url","url":"https://github.com/laramies/theHarvester","description":"Command-line tool for gathering emails, subdomains, IPs and URLs from public sources.","status":"live","pricing":"free","bestFor":"Email and domain reconnaissance","input":"Domain","output":"Emails, hosts, IPs and URLs","opsec":"passive","localInstall":true,"googleDork":false,"registration":false,"editUrl":false,"api":false,"invitationOnly":false,"deprecated":false}
+      ]}
+    ]},
+    {"name":"Domain Name","type":"folder","children":[
+      {"name":"Certificate Search","type":"folder","children":[
+        {"name":"crt.sh","type":"url","url":"https://crt.sh/","description":"Certificate Transparency log search.","status":"live","pricing":"free","bestFor":"Certificate and subdomain discovery","input":"Domain","output":"Certificates and related hostnames","opsec":"passive","localInstall":false,"googleDork":false,"registration":false,"editUrl":false,"api":false,"invitationOnly":false,"deprecated":false}
+      ]},
+      {"name":"Analytics","type":"folder","children":[
+        {"name":"BuiltWith","type":"url","url":"https://builtwith.com/","description":"Website technology profiling service.","status":"live","pricing":"freemium","bestFor":"Technology stack discovery","input":"Website or domain","output":"Detected technologies","opsec":"passive","localInstall":false,"googleDork":false,"registration":false,"editUrl":false,"api":true,"invitationOnly":false,"deprecated":false}
+      ]}
+    ]},
+    {"name":"Archives","type":"folder","children":[
+      {"name":"Wayback Machine","type":"url","url":"https://web.archive.org/","description":"Historical snapshots of public web pages.","status":"live","pricing":"free","bestFor":"Finding historical versions of webpages","input":"URL or domain","output":"Archived snapshots","opsec":"passive","localInstall":false,"googleDork":false,"registration":false,"editUrl":false,"api":true,"invitationOnly":false,"deprecated":false}
+    ]},
+    {"name":"IP & MAC Address","type":"folder","children":[
+      {"name":"IP Geolocation","type":"folder","children":[
+        {"name":"MaxMind Demo","type":"url","url":"https://www.maxmind.com/en/geoip-demo","description":"IP geolocation demonstration tool.","status":"live","pricing":"free","bestFor":"Basic IP geolocation","input":"IP address","output":"Approximate geographic and network information","opsec":"passive","localInstall":false,"googleDork":false,"registration":false,"editUrl":false,"api":false,"invitationOnly":false,"deprecated":false}
+      ]}
+    ]}
+  ]
+}
